@@ -82,17 +82,18 @@ $hero-full-screen-text-color: $black;
   .middle-content-section {
     text-align: center;
     color: $hero-full-screen-text-color;
+    height: 100%;
 
     #home-logo {
-        height: 40%;
+        height: 25vh;
     }
 
     #home-title {
-        font-size: 70px;
+        font-size: 3.5em;
     }
 
     #home-description{
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-family: 'Roboto'
     }
   }
