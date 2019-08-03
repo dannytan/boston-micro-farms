@@ -13,9 +13,9 @@
 @include foundation-typography;
 
 // Grids (choose one)
-@include foundation-xy-grid-classes;
+// @include foundation-xy-grid-classes;
 // @include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-flex-grid;
 
 // Generic components
 @include foundation-button;
@@ -79,6 +79,33 @@ $hero-full-screen-text-color: $black;
   background: $hero-full-screen-bg;
   background-size: $hero-full-screen-bg-size;
 
+  .top-content-section {
+    width: 100%;
+
+    // optional demo styles
+    .top-bar {
+      background: transparent;
+
+      .menu {
+        background: transparent;
+      }
+
+      .menu-text {
+        color: $hero-full-screen-text-color;
+      }
+
+      .menu li {
+        display: flex;
+        align-items: center;
+      }
+
+      .menu a {
+        color: $hero-full-screen-text-color;
+        font-weight: bold;
+      }
+    }
+  }
+
   .middle-content-section {
     text-align: center;
     color: $hero-full-screen-text-color;
@@ -98,10 +125,6 @@ $hero-full-screen-text-color: $black;
     }
   }
 
-  .top-content-section {
-    width: 100%;
-  }
-
   .bottom-content-section {
     padding: 1rem;
 
@@ -111,27 +134,33 @@ $hero-full-screen-text-color: $black;
       fill: $hero-full-screen-text-color;
     }
   }
+}
 
-  // optional demo styles
-  .top-bar {
-    background: transparent;
+#main-content-section {
+  height: 100vh;
+  display: grid;
+  background-color: #4A4D54;
+  text-align: center;
 
-    .menu {
-      background: transparent;
-    }
+  #eden-intro {
+    font-size: 3em;
+    font-weight: bold;
+    color: #DAD7CC;
+  }
 
-    .menu-text {
-      color: $hero-full-screen-text-color;
-    }
+  #eden-logo {
+    height: 25vh;
+  }
 
-    .menu li {
-      display: flex;
-      align-items: center;
-    }
+  #eden-title {
+    font-size: 4em;
+    font-weight: bold;
+    color: $white;
+  }
 
-    .menu a {
-      color: $hero-full-screen-text-color;
-      font-weight: bold;
-    }
+  #eden-description {
+    font-family: 'Roboto';
+    font-size: 1em;
+    color: #DAD7CC;
   }
 }

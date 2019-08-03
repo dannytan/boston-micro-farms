@@ -1,42 +1,47 @@
-<div class="grid-container full">
-  <div class="hero-full-screen">
-    <div class="top-content-section">
-      <div class="top-bar">
-        <div class="top-bar-right">
-          <ul class="menu">
-            <!-- <li class="menu-text"><img src="http://placehold.it/75x30" alt="logo"></li> -->
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
+<div class="hero-full-screen">
+  <div class="top-content-section">
+    <div class="top-bar">
+      <div class="top-bar-right">
+        <ul class="menu">
+          <!-- <li class="menu-text"><img src="http://placehold.it/75x30" alt="logo"></li> -->
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
     </div>
-  
-    <div class="middle-content-section">
-      <img id="home-logo" src="../assets/img/bmf-logo.png" alt="logo">
-      <div id="home-title">Boston Micro Farms</div>
-      <div class="grid-x grid-margin-x">
-        <div class="cell small-2"></div>
-        <div class="cell small-8">
-          <p id="home-description">For affordable, easy, and intelligent urban farming, we are developing intelligent vertical aquaponic systems to produce bountiful crops in confined spaces.</p>
-        </div>
-        <div class="cell small-2"></div>
-      </div>
-    </div>
-  
-    <div class="bottom-content-section" data-magellan data-threshold="0">
-      <a href="#main-content-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
-    </div>
-  
   </div>
-  
-  <div id="main-content-section" data-magellan-target="main-content-section">
-    ADD MAIN CONTENT HERE
+
+  <div class="middle-content-section">
+    <img id="home-logo" src="../assets/img/bmf-logo.png" alt="logo">
+    <div id="home-title">Boston Micro Farms</div>
+    <div class="row align-center">
+      <div class="columns small-8">
+        <p id="home-description">For affordable, easy, and intelligent urban farming, we are developing intelligent vertical aquaponic systems to produce bountiful crops in confined spaces.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-content-section" data-magellan data-threshold="0">
+    <a href="#main-content-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
+  </div>
+
+</div>
+
+<div id="main-content-section" data-magellan-target="main-content-section">
+  <div class="row align-center align-middle">
+      <div class="columns small-6">
+        <div id="eden-intro">Introducing:</div>
+        <img id="eden-logo" src="../assets/img/eden-logo.png" alt="eden">
+        <div id="eden-title">EDEN</div>
+        <p id="eden-description">An intelligent vertical aquaponic system to produce bountiful crops in confined spaces.</p>
+      </div>
+    </div>
   </div>
 </div>
 
 <script>
+    // Home Animations
     ScrollReveal().reveal('#home-logo', { 
       delay: 300, 
       duration: 1000, 
@@ -47,5 +52,31 @@
       delay: 900, 
       duration: 1000, 
       distance: '150%'
+    });
+    
+    // About Animations
+    ScrollReveal().reveal('#eden-intro', { 
+      delay: 300, 
+      duration: 1000, 
+      distance: '50%',
+      origin: 'left' 
+    });
+    ScrollReveal().reveal('#eden-logo', { 
+      delay: 500, 
+      duration: 1000, 
+      distance: '50%',
+      origin: 'left' 
+    });
+    ScrollReveal().reveal('#eden-title', { 
+      delay: 700, 
+      duration: 1000, 
+      distance: '50%',
+      origin: 'left' 
+    });
+    ScrollReveal().reveal('#eden-description', { 
+      delay: 900, 
+      duration: 1000, 
+      distance: '50%',
+      origin: 'left' 
     });
 </script>
