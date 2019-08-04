@@ -166,11 +166,19 @@ $hero-full-screen-text-color: $black;
 }
 
 .contact-us-section {
-  padding: 2rem;
+  padding: 3rem 3.5rem;
   background: #E2E2E2;
 
   @media screen and #{breakpoint(medium)} and #{breakpoint(large down)} {
-    padding: 6rem;
+    padding: 5rem 7rem;
+  }
+
+  @media screen and #{breakpoint(large)} and #{breakpoint(xlarge down)}{
+    padding: 5rem 10rem;
+  }
+
+  @media screen and #{breakpoint(xlarge)}{
+    padding: 5rem 12rem;
   }
 
   .contact-us-header {
