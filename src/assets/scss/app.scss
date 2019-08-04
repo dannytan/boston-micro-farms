@@ -166,20 +166,22 @@ $hero-full-screen-text-color: $black;
 }
 
 .contact-us-section {
-  padding: 3rem;
+  padding: 2rem;
   background: #E2E2E2;
 
+  @media screen and #{breakpoint(medium)} and #{breakpoint(large down)} {
+    padding: 6rem;
+  }
+
   .contact-us-header {
-    margin-bottom: $contact-us-section-padding;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
 
     @media screen and #{breakpoint(medium)} and #{breakpoint(large down)} {
       font-size: 32px;
     }
-  }
-
-  .responsive-embed {
-    margin-bottom: 0;
-    padding-bottom: 55%;
   }
 }
 
@@ -193,51 +195,12 @@ $hero-full-screen-text-color: $black;
 
 .contact-us-form-actions {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  float: right;
 
   input[type=submit] {
     border-radius: 5000px;
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .contact-us-file-button {
-    background: transparent;
-    color: $dark-gray;
-  }
-}
-
-.contact-us-list {
-  list-style-type: none;
-  margin: 0;
-
-  li {
-    a {
-      color: $black;
-    }
-  }
-
-  li::before {
-    margin-right: 2rem;
-    font-size: 2rem;
-    vertical-align: middle;
-    color: $dark-gray;
-    font-family: 'FontAwesome';
-  }
-
-  // generates icons - change fontawesome content codes below to change icons
-  .address::before {
-    content: '\f041';
-    margin-left: 0.4rem;
-    margin-right: 2.3rem;
-  }
-
-  .email::before {
-    content: '\f003';
-  }
-
-  .phone::before {
-    content: '\f098';
+    font-weight: bold;
   }
 }
