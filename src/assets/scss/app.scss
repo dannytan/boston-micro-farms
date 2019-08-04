@@ -110,6 +110,7 @@ $hero-full-screen-text-color: $black;
     text-align: center;
     color: $hero-full-screen-text-color;
     height: 100%;
+    padding-top: 5vh;
 
     #home-logo {
         height: 25vh;
@@ -117,11 +118,19 @@ $hero-full-screen-text-color: $black;
 
     #home-title {
         font-size: 3.5em;
+
+        @media screen and #{breakpoint(small down)} {
+          font-size: 3rem;
+        }
     }
 
-    #home-description{
+    #home-description {
         font-size: 1rem;
-        font-family: 'Roboto'
+        font-family: 'Roboto';
+
+        @media screen and #{breakpoint(small down)} {
+          font-size: .8rem;
+        }
     }
   }
 
