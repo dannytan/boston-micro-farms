@@ -110,7 +110,7 @@ $hero-full-screen-text-color: $black;
     text-align: center;
     color: $hero-full-screen-text-color;
     height: 100%;
-    padding-top: 5vh;
+    padding-top: 10vh;
 
     #home-logo {
         height: 25vh;
@@ -145,7 +145,7 @@ $hero-full-screen-text-color: $black;
   }
 }
 
-#about-section {
+#about {
   height: 100vh;
   display: grid;
   background-color: #4A4D54;
@@ -174,7 +174,7 @@ $hero-full-screen-text-color: $black;
   }
 }
 
-.contact-us-section {
+.contact {
   padding: 3rem 3.5rem;
   background: #E2E2E2;
 
@@ -190,7 +190,7 @@ $hero-full-screen-text-color: $black;
     padding: 5rem 12rem;
   }
 
-  .contact-us-header {
+  .contact-header {
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2rem;
@@ -200,24 +200,27 @@ $hero-full-screen-text-color: $black;
       font-size: 32px;
     }
   }
-}
 
-.contact-us-form {
-  input[type=text],
-  input[type=email],
-  textarea {
-    margin-bottom: 1.5rem;
+  .contact-form {
+    input[type=text],
+    input[type=email],
+    textarea {
+      margin-bottom: 1.5rem;
+      font-family: 'Roboto';
+      border-radius: 7px;
+    }
   }
-}
-
-.contact-us-form-actions {
-  display: flex;
-  float: right;
-
-  input[type=submit] {
-    border-radius: 5000px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-weight: bold;
+  
+  .contact-form-actions {
+    display: flex;
+    float: right;
+  
+    input[type=submit] {
+      border-radius: 5000px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      font-weight: bold;
+      font-family: 'Roboto';
+    }
   }
 }
