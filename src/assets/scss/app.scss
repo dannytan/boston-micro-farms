@@ -174,6 +174,39 @@ $hero-full-screen-text-color: $black;
   }
 }
 
+.services {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  font-family: 'Roboto';
+
+  .row {
+    max-width: 900px;
+  }
+
+  .columns {
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 40em) {
+      margin-bottom: 0;
+    }
+  }
+
+  .fa {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #7B855A;
+  }
+
+  .services-headline {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .services-title {
+    font-size: 1.7rem;
+  }
+}
+
 .contact {
   padding: 3rem 3.5rem;
   background: #E2E2E2;
